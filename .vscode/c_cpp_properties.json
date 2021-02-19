@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "Y:\\Arduino\\libraries\\**",
+                "M:\\Dokumente\\Arduino\\libraries\\**",
+                "P:\\x86\\Arduino\\tools\\**",
+                "P:\\x86\\Arduino\\libraries\\**",
+                "P:\\x86\\Arduino\\hardware\\tools\\**",
+                "P:\\x86\\Arduino\\hardware\\arduino\\avr\\**",
+                "${workspaceFolder}/**"
+            ],
+            "browse": {
+                "path": [
+                    "Y:\\Arduino\\libraries\\**",
+                    "M:\\Dokumente\\Arduino\\libraries\\**"
+                ]
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USBCON"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "forcedInclude": [
+                "P:\\x86\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ]
+        }
+    ],
+    "version": 4
+}
