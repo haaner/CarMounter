@@ -9,7 +9,12 @@
                 "P:\\x86\\Arduino\\libraries\\**",
                 "P:\\x86\\Arduino\\hardware\\tools\\**",
                 "P:\\x86\\Arduino\\hardware\\arduino\\avr\\**",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/**",
+                "/Applications/Arduino.app/Contents/Java/hardware/tools/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Volumes/webdav/Arduino/libraries/**",
+                "/Applications/Arduino.app/Contents/Java/tools/**"
             ],
             "browse": {
                 "path": [
@@ -27,7 +32,24 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",
             "forcedInclude": [
-                "P:\\x86\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+                "P:\\x86\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ]
+        },
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Applications/Arduino.app/Contents/Java/tools/**",
+                "/Volumes/webdav/Arduino/libraries/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Applications/Arduino.app/Contents/Java/hardware/tools/**",
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/**"
+            ],
+            "forcedInclude": [
+                "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "defines": [
+                "USBCON"
             ]
         }
     ],
