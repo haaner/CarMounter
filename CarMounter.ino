@@ -1,3 +1,13 @@
+#include "SevSegShift.h"
+
+class LedSegment : public SevSegShift {
+
+public:
+	LedSegment(int ds_pin, int shcp_pin, int stcp_pin, byte *four_digit_pins, byte *eight_segment_pins) : SevSegShift(ds_pin, shcp_pin, stcp_pin, 1, true) {
+		this->begin(COMMON_CATHODE, 4, four_digit_pins, eight_segment_pins, false, false, false, false);
+	}
+};
+
 class UpDownSwitch {
 
 private:
@@ -50,16 +60,20 @@ public:
 	bool isClosed() { return !isOpen(); }
 };
 
+LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 6, 4, 3, 2, 7, 5});
+
 UpDownSwitch upDownSwitch(2, 3);
 
-Led blueLed(7);
-Led redLed(8);
+MagnetSwitch magnetSwitch(11);
 
-MagnetSwitch magnetSwitch(12);
+Led blueLed(12);
+Led redLed(13);
 
 void setup() {
-	Serial.begin(9600);
+	Serial.begin(115200);
 	digitalWrite(LED_BUILTIN, LOW);
+
+	ledSegment.setNumber(3141, 3); 
 }
 
 void loop() {
@@ -84,5 +98,5 @@ void loop() {
 		}
 	}
 
-	delay(500);
+	ledSegment.refreshDisplay();
 }

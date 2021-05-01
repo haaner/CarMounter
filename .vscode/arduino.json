@@ -2,5 +2,6 @@
     "programmer": "AVR ISP",
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbmodem14201",
-    "sketch": "CarMounter.ino"
+    "sketch": "CarMounter.ino",
+    "output": "/Users/haaner/Arduino/build"
 }
