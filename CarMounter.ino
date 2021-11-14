@@ -60,7 +60,7 @@ public:
 	bool isClosed() { return !isOpen(); }
 };
 
-LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 6, 4, 3, 2, 7, 5});
+LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 4, 6, 7, 2, 3, 5});
 
 UpDownSwitch upDownSwitch(2, 3);
 
