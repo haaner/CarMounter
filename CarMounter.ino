@@ -60,14 +60,18 @@ public:
 	bool isClosed() { return !isOpen(); }
 };
 
-LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 4, 6, 7, 2, 3, 5});
+/// --- ///
 
-UpDownSwitch upDownSwitch(2, 3);
+LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 6, 4, 3, 2, 7, 5});
 
-MagnetSwitch magnetSwitch(11);
+UpDownSwitch upDownSwitch(A2, A3);
+
+MagnetSwitch magnetSwitch(A0);
 
 Led blueLed(12);
 Led redLed(13);
+
+/// --- ///
 
 void setup() {
 	Serial.begin(115200);
