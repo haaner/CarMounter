@@ -1,7 +1,8 @@
 {
     "programmer": "AVR ISP",
-    "board": "arduino:avr:uno",
-    "port": "/dev/tty.usbmodem14201",
+    "board": "arduino:avr:nano",
+    "port": "/dev/tty.usbserial-1420",
     "sketch": "CarMounter.ino",
-    "output": "/Users/haaner/Arduino/build"
+    "output": "/Users/haaner/Arduino/build",
+    "configuration": "cpu=atmega328old"
 }

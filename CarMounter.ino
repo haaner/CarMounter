@@ -62,7 +62,7 @@ public:
 
 /// --- ///
 
-LedSegment ledSegment(8, 9, 10, new byte[4]{7, 6, 5, 4}, new byte[8]{0, 1, 6, 4, 3, 2, 7, 5});
+LedSegment ledSegment(10, 8, 9, new byte[4]{4, 5, 6, 7}, new byte[8]{0, 1, 4, 6, 7, 2, 3, 5});
 
 UpDownSwitch upDownSwitch(A2, A3);
 
@@ -77,7 +77,7 @@ void setup() {
 	Serial.begin(115200);
 	digitalWrite(LED_BUILTIN, LOW);
 
-	ledSegment.setNumber(3141, 3); 
+	ledSegment.setNumber(6789, 3); 
 }
 
 void loop() {
